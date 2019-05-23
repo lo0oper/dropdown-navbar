@@ -1,0 +1,64 @@
+
+</style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li>
+            <a href="#">Products &#9662;</a>
+            <ul class="dropdown">
+                <li><a href="#">Laptops</a></li>
+                <li><a href="#">Monitors</a></li>
+                <li><a href="#">Printers</a></li>
+            </ul>
+        </li>
+        <li class="contact"> <a href="#">Contact</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum. Vivamus fermentum in arcu in aliquam. Quisque aliquam porta odio in fringilla. Vivamus nisl leo, blandit at bibendum eu, tristique eget risus. Integer aliquet quam ut elit suscipit, id interdum neque porttitor. Integer faucibus ligula.</p>
+</body>
+</html>                            
+<style>
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+ul{
+    width:auto;
+    background:darkcyan;
+    display:inline-block;
+    padding:10px 20px;
+    display:flex;
+}
+a{
+    color:black;
+}
+a:hover{
+    padding:8px 10px;
+    color:blanchedalmond;
+    background:darkblue;
+
+}
+ul li{
+    padding:8px 15px;
+    list-style: none;
+    font-size:large;
+
+}
+ul li ul{
+    visibility: hidden;
+    display: none;
+}
+ul li:hover ul.dropdown{
+    padding:2px;
+    width:15%;
+    visibility: visible;
+    display: block;
+    position:absolute;
+}
+.contact{
+  margin-left:60%;
+}
+</style>

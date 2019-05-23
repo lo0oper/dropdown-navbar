@@ -1,0 +1,89 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+body,html{
+    height:100%;
+    width:100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    display: flex;
+    flex-direction:column; 
+    flex-wrap:wrap;
+}
+a{
+    text-decoration: none;
+    display: block;
+    color: black;
+    text-emphasis: bold;
+}
+.mid{
+    background-image: url("photo.jpg");
+    background-size:cover;
+    position: center;
+    height:100vh;
+    width:100vh;
+    flex:1;
+
+}
+.shiftleft{margin-left:55%
+}
+ ul {
+    
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100vh;
+    list-style:none;
+    background: grey;
+    display:flex;   
+    justify-items: space-between;
+    
+    
+}
+ul li{
+    
+    padding:5px 10px;
+    line-height: 30px;
+    text-align: left;
+}
+ul li ul.dropdown{
+  
+   visibility: hidden;  
+   display :none;
+   width: 20%;
+    background: #f2f2f2;
+   position: absolute;
+}
+ul li a:hover{
+    transition: all 0.3s ease;
+    background:whitesmoke;
+    color:black;
+}
+li:hover ul.dropdown{ 
+    display:block;
+    
+}
+ul li:hover ul.dropdown li{
+    display:block;
+}
+ul li:hover ul li{
+    visibility: visible;
+    display: block;
+}
+
+
+footer ul{
+    display: flex;
+    text-align: center;
+    justify-items: flex-end;
+    background-color:salmon;
+}
+
+
+footer ul li{
+    margin-left:20%;
+    justify-items: center;
+    text-align: center;
+    background:darken(salmon,2%);
+}
